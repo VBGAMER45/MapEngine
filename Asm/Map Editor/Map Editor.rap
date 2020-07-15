@@ -1,0 +1,100 @@
+[Project]
+Assembler=masm
+Type=Win32 App
+Description=Simple Map Editor
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+[Files]
+1=Map Editor.Asm
+2=Map Editor.Inc
+3=MapEditor.rc
+4=test.rc
+[MakeFiles]
+0=Map Editor.rap
+1=Map Editor.rc
+2=Map Editor.asm
+3=Map Editor.obj
+4=Map Editor.res
+5=Map Editor.exe
+6=Map Editor.def
+7=Map Editor.dll
+8=Map Editor.txt
+9=Map Editor.lib
+10=Map Editor.mak
+11=Map Editor.hla
+12=Map Editor.com
+[MakeDef]
+Menu=1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+1=4,O,$B\RC.EXE /v,1
+2=3,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",2
+3=5,O,$B\LINK.EXE /SUBSYSTEM:WINDOWS /RELEASE /VERSION:4.0 /LIBPATH:"$L" /OUT:"$5",3,4
+4=0,0,,5
+5=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+7=0,0,$E\OllyDbg,5
+[Group]
+Group=Added files,Assembly,Resources,Misc,Modules
+1=2
+2=2
+3=3
+4=1
+[Size]
+3=0,0,0,0,0
+4=0,0,0,0,240
+2=0,0,0,0,0
+1=0,0,0,0,0
+[VersionControl]
+Settings=1279
+Milestones=129
+MilestoneEvery=10
+MilestoneEveryCurrent=0
+MilestoneOnBuild=0.0.0.0
+MilestoneOnTime=2
+MilestoneOnDate=0
+MilestoneOnDateWhen=1
+MilestoneOnDateStatus=0
+MilestoneOnDateDate=5
+MilestoneOnDateTimeYear=2005
+MilestoneOnDateTimeMonth=1
+MilestoneOnDateTimeDate=5
+MilestoneOnDateTimeHour=19
+MilestoneOnDateTimeMin=29
+MilestoneOnDateTimeSec=29
+MilestoneOnDateTimeStatus=0
+BackupLocation=C:\unzipped\Visual Assembler\RadASM\Masm\Projects\VCBackups\
+CompressionLevel=0
+DefaultComment=Project $N, $Z, Backup Created On $D At $T.
+ExcludeExt1=\
+ExcludeExt2=\
+ExcludeExt3=\
+ExcludeExt4=\
+FileVerLength=4
+FileVer2Range=0
+FileVer3Range=0
+FileVer4Range=0
+ProductVerLength=4
+ProductVer2Range=0
+ProductVer3Range=0
+ProductVer4Range=0
+[Colref]
+0=00FFFFFF
+1=00FFFFFF
+2=00FFFFFF
+3=00FFFFFF
+4=00FFFFFF
+5=00FFFFFF
+6=00FFFFFF
+7=00FFFFFF
+[BookMark]
+0=
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+[BreakPoint]
+0=

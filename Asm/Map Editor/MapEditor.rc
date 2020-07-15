@@ -1,0 +1,295 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAPEDITOR           ICON    DISCARDABLE     "MapEditor.ICO"
+IDI_SMALL               ICON    DISCARDABLE     "SMALL.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_MAPEDITOR MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        IDM_FILENEW, GRAYED
+        MENUITEM "&Open",                       IDM_FILEOPEN
+        MENUITEM "&Save",                       IDM_FILESAVE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Map"
+    BEGIN
+        MENUITEM "Clear Sc&reen",               IDM_MAPCLEARSCREEN
+        MENUITEM "&Fill Screen w/Selected Tile", IDM_MAPFILLSCREEN
+        MENUITEM "&View Tile Type",             IDM_MAPVIEWFILETYPE, CHECKED
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Normal Paint",               IDC_TOOLSNORMALPAINT
+        , CHECKED
+    END
+    MENUITEM "&View",                       65535
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_MAPEDITOR ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 230, 75
+STYLE DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_MAPEDITOR,IDC_MYICON,14,9,20,20
+    LTEXT           "MapEditor Version 1.0 by vbgamer45",IDC_STATIC,49,10,
+                    129,10,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004 http://www.visuaslbasiczone.com",
+                    IDC_WEBSITE,50,28,119,21
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+IDD_NEWMAP DIALOGEX 3, 1, 208, 127
+STYLE DS_CENTER | WS_CAPTION
+CAPTION "   New Map"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Map Size",IDC_STATIC,5,22,193,77
+    EDITTEXT        IDC_TXTY,112,81,25,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_TXTX,72,81,25,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_TABSTOP
+    CONTROL         "Custom",IDC_OPTCUSTOM,"Button",BS_AUTORADIOBUTTON,16,81,
+                    43,8
+    CONTROL         "Huge (200x200)",IDC_OPTHUGE,"Button",BS_AUTORADIOBUTTON,
+                    101,62,65,8
+    CONTROL         "Extra Large (140x140)",IDC_OPTEXTRALARGE,"Button",
+                    BS_AUTORADIOBUTTON,101,49,86,8
+    CONTROL         "Large (100x100)",IDC_OPTLARGE,"Button",
+                    BS_AUTORADIOBUTTON,101,37,65,8
+    CONTROL         "Medium (40x40)",IDC_OPTMEDIUM,"Button",
+                    BS_AUTORADIOBUTTON,16,62,65,8
+    CONTROL         "Small (20x20)",IDC_OPTSMALL,"Button",BS_AUTORADIOBUTTON,
+                    16,49,65,8
+    CONTROL         "Tiny (10x10)",IDC_OPTTINY,"Button",BS_AUTORADIOBUTTON,
+                    16,37,65,8
+    LTEXT           "X",IDC_STATIC,101,84,8,8,NOT WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_TXTMAPNAME,45,5,153,13,ES_AUTOHSCROLL | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "&OK",IDC_OK,91,103,54,20,NOT WS_TABSTOP
+    PUSHBUTTON      "&Cancel",IDC_CANCEL,149,103,54,20,NOT WS_TABSTOP
+    LTEXT           "Map Name:",IDC_STATIC,3,7,41,8,NOT WS_GROUP
+END
+
+IDD_TOOLS DIALOGEX 3, 1, 102, 342
+STYLE WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "MiniMap",IDC_STATIC,7,192,84,55
+    CONTROL         "",IDC_PICMINIMAP,"Static",SS_BLACKFRAME,17,202,61,40
+    GROUPBOX        "Selected Tool",IDC_STATIC,5,118,91,25
+    LTEXT           "Normal Paint",IDC_LBLSELECTEDTOOL,11,128,81,10,NOT 
+                    WS_GROUP
+    GROUPBOX        "Selected Tile",IDC_STATIC,18,81,54,35
+    CONTROL         "",IDC_PICSELECTED,"Static",SS_BLACKFRAME,37,90,21,20
+    CONTROL         "",IDC_PICDISPLAY,"Static",SS_GRAYFRAME | SS_NOTIFY,3,10,
+                    91,64
+    GROUPBOX        " Choose Tile",IDC_STATIC,0,0,101,79
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,5,
+                    0,13,7
+    GROUPBOX        "Tile Y",IDC_STATIC,53,158,33,25
+    LTEXT           "Static",IDC_TILEY,59,167,22,10,NOT WS_GROUP
+    GROUPBOX        "Tile Cordinates",IDC_STATIC,5,148,86,40
+    GROUPBOX        "Tile X",IDC_STATIC,11,158,33,25
+    LTEXT           "Static",IDC_TILEX,16,167,22,10,NOT WS_GROUP
+    LTEXT           "TileType:",IDC_STATIC,5,256,81,10,NOT WS_GROUP
+    COMBOBOX        IDC_CBOTILETYPE,7,269,87,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    SCROLLBAR       IDC_HSTILES,2,65,99,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "VisualBasicZone.com\0"
+            VALUE "FileDescription", "MapEditor\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MapEditor\0"
+            VALUE "LegalCopyright", "Copyright © 2004  VisualBasicZone.com\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MapEditor.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MapEditor\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TOOLS DLGINIT
+BEGIN
+    IDC_CBOTILETYPE, 0x403, 9, 0
+0x6177, 0x6b6c, 0x6261, 0x656c, "\000" 
+    IDC_CBOTILETYPE, 0x403, 11, 0
+0x6f6e, 0x776e, 0x6c61, 0x616b, 0x6562, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TOOLS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 101
+        BOTTOMMARGIN, 340
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Map Editor by vbgamer45 http://www.visualbasiczone.com"
+    IDS_HELLO               "Hello World!"
+    IDC_MAPEDITOR           "MAPEDITOR"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

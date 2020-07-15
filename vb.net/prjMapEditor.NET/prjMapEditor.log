@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "prjMapEditor.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "prjMapEditor"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "prjMapEditor.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Documents and Settings\John\Desktop\Programming\Map Engine\vb.net\prjMapEditor.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "C:\Documents and Settings\John\Desktop\Programming\Map Engine\vb.net\prjMapEditor.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "0"
+        />
+    </Settings>
+    <File
+        OldPath = "C:\Documents and Settings\John\Desktop\Programming\Map Engine\vb.net\frmMain.frm"
+        NewPath = "C:\Documents and Settings\John\Desktop\Programming\Map Engine\vb.net\prjMapEditor.NET\frmMain.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "AutoRedraw"
+            >Form property frmMain.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2038"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "ScaleMode"
+            >Form property frmMain.ScaleMode is not supported.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picTiles"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property picTiles.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picTiles"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox property picTiles.ScaleMode was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2068"
+            >Shape object was not upgraded.</Issue>
+        </Section>
+        <Section Name = "Form_MouseDown" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "PopupMenu"
+            >Form method frmMain.PopupMenu was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Shape1"
+                ObjectType = "Shape"
+                PME = "BorderColor"
+            >Shape property Shape1.BorderColor was not upgraded.</Issue>
+        </Section>
+        <Section Name = "Form_MouseMove" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Shape1"
+                ObjectType = "Shape"
+                PME = "BorderColor"
+            >Shape property Shape1.BorderColor was not upgraded.</Issue>
+        </Section>
+        <Section Name = "Form_MouseUp" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "Shape1"
+                ObjectType = "Shape"
+                PME = "BorderColor"
+            >Shape property Shape1.BorderColor was not upgraded.</Issue>
+        </Section>
+        <Section Name = "PaintTile" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "hDC"
+            >Form property frmMain.hDC was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picTiles"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picTiles.hDC was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "CurrentX"
+            >Form property frmMain.CurrentX was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "CurrentY"
+            >Form property frmMain.CurrentY was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "Print"
+            >Form method frmMain.Print was not upgraded.</Issue>
+        </Section>
+        <Section Name = "Form_Terminate" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "Form"
+                ObjectType = "frmMain"
+                PME = "Terminate"
+            >frmMain event Form.Terminate has a new behavior.</Issue>
+        </Section>
+        <Section Name = "Form_Unload" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "Unload"
+            >Form event frmMain.Unload has a new behavior.</Issue>
+        </Section>
+        <Section Name = "RedrawMap" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "Cls"
+            >Form method frmMain.Cls was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "hDC"
+            >Form property frmMain.hDC was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picTiles"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picTiles.hDC was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "CurrentX"
+            >Form property frmMain.CurrentX was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "CurrentY"
+            >Form property frmMain.CurrentY was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "frmMain"
+                ObjectType = "Form"
+                PME = "Print"
+            >Form method frmMain.Print was not upgraded.</Issue>
+        </Section>
+        <Section Name = "hsMap_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "hsMap"
+                ObjectType = "HScrollBar"
+                PME = "Change"
+            >HScrollBar event hsMap.Change has a new behavior.</Issue>
+        </Section>
+        <Section Name = "mnuFileExportBMP_Click" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+                PME = "SavePicture"
+            >SavePicture was upgraded to System.Drawing.Image.Save and has a new behavior.</Issue>
+        </Section>
+        <Section Name = "SaveMap" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Put was upgraded to FilePut and has a new behavior.</Issue>
+        </Section>
+        <Section Name = "LoadMap" >
+            <Issue
+                Type = "Runtime"
+                Number = "1041"
+            >Get was upgraded to FileGet and has a new behavior.</Issue>
+        </Section>
+        <Section Name = "vsMap_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "vsMap"
+                ObjectType = "VScrollBar"
+                PME = "Change"
+            >VScrollBar event vsMap.Change has a new behavior.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Documents and Settings\John\Desktop\Programming\Map Engine\vb.net\frmTools.frm"
+        NewPath = "C:\Documents and Settings\John\Desktop\Programming\Map Engine\vb.net\prjMapEditor.NET\frmTools.vb"
+        FileType = "Form"
+        Upgraded = "True"
+    >
+        <Section Name = "(Layout)" >
+            <Issue
+                Type = "Design"
+                Number = "2056"
+                ObjectName = "cboTileType"
+                ObjectType = "ComboBox"
+                PME = "ItemData"
+            >ComboBox property cboTileType.ItemData was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "frmTools"
+                ObjectType = "Form"
+                PME = "AutoRedraw"
+            >Form property frmTools.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2038"
+                ObjectName = "frmTools"
+                ObjectType = "Form"
+                PME = "ScaleMode"
+            >Form property frmTools.ScaleMode is not supported.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "1041"
+                PME = "array"
+            >Array has a new behavior.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "MiniMap"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property MiniMap.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "MiniMap"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox property MiniMap.ScaleMode was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2068"
+            >Shape object was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picSelected"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property picSelected.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picSelected"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox property picSelected.ScaleMode was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picDisplay"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property picDisplay.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picDisplay"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox property picDisplay.ScaleMode was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picStorage"
+                ObjectType = "PictureBox"
+                PME = "AutoRedraw"
+            >PictureBox property picStorage.AutoRedraw was not upgraded.</Issue>
+            <Issue
+                Type = "Design"
+                Number = "2064"
+                ObjectName = "picStorage"
+                ObjectType = "PictureBox"
+                PME = "ScaleMode"
+            >PictureBox property picStorage.ScaleMode was not upgraded.</Issue>
+        </Section>
+        <Section Name = "Form_Load" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picSelected"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picSelected.hDC was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picStorage"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picStorage.hDC was not upgraded.</Issue>
+        </Section>
+        <Section Name = "hsTiles_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "hsTiles"
+                ObjectType = "HScrollBar"
+                PME = "Change"
+            >HScrollBar event hsTiles.Change has a new behavior.</Issue>
+        </Section>
+        <Section Name = "picDisplay_MouseDown" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picSelected"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picSelected.hDC was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picDisplay"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picDisplay.hDC was not upgraded.</Issue>
+        </Section>
+        <Section Name = "RedrawTile" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picDisplay"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox method picDisplay.Cls was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picDisplay"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picDisplay.hDC was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picStorage"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picStorage.hDC was not upgraded.</Issue>
+        </Section>
+        <Section Name = "RefreshMiniMap" >
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "MiniMap"
+                ObjectType = "PictureBox"
+                PME = "Cls"
+            >PictureBox method MiniMap.Cls was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "MiniMap"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property MiniMap.hDC was not upgraded.</Issue>
+            <Issue
+                Type = "Compile"
+                Number = "2064"
+                ObjectName = "picStorage"
+                ObjectType = "PictureBox"
+                PME = "hDC"
+            >PictureBox property picStorage.hDC was not upgraded.</Issue>
+        </Section>
+        <Section Name = "vsTiles_Change" >
+            <Issue
+                Type = "Runtime"
+                Number = "2065"
+                ObjectName = "vsTiles"
+                ObjectType = "VScrollBar"
+                PME = "Change"
+            >VScrollBar event vsTiles.Change has a new behavior.</Issue>
+        </Section>
+    </File>
+    <File
+        OldPath = "C:\Documents and Settings\John\Desktop\Programming\Map Engine\vb.net\modMap.bas"
+        NewPath = "C:\Documents and Settings\John\Desktop\Programming\Map Engine\vb.net\prjMapEditor.NET\modMap.vb"
+        FileType = "Module"
+        Upgraded = "True"
+    >
+        <Section Name = "Snap" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object Cordinate.</Issue>
+        </Section>
+        <Section Name = "Snap2" >
+            <Issue
+                Type = "Runtime"
+                Number = "1037"
+            >Couldn't resolve default property of object Cordinate.</Issue>
+        </Section>
+    </File>
+</UpgradeLog>
+
