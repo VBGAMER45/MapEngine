@@ -1,7 +1,0 @@
-# Microsoft Developer Studio Generated Dependency File, included by MapEditor.mak
-
-.\MapEditor.rc : \
-	".\ENTIRNET.ICO"\
-	".\MapEditor.ico"\
-	".\small.ico"\
-	
